@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Magic Reveal</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    #magic {
+      display: none;
+      margin-top: 30px;
+    }
+
+    #magic h1 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    #magic img {
+      width: 300px;
+      max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showMagic()">Click here to see magic</button>
+
+  <div id="magic">
+    <h1>Aj to coding  kar k rahunga...</h1>
+    <img src="0_4SvfYAOTpAadZmIX.gif" alt="Magic GIF">
+  </div>
+
+  <script>
+    function showMagic() {
+      document.querySelector("button").style.display = "none";
+      document.getElementById("magic").style.display = "block";
+    }
+  </script>
+</body>
+</html>
